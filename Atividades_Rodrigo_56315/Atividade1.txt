@@ -1,0 +1,11 @@
+site 1 – IKEA Portugal (https://www.ikea.pt/
+)
+
+1. Algumas imagens promocionais não têm descrição alternativa (o leitor de ecrã só diz “imagem”).
+2. Texto em cinzento-claro sobre fundo branco tem contraste baixo, dificultando a leitura para pessoas com baixa visão.
+
+Site 2 – Museu Nacional de Arte Antiga (https://museudearteantiga.pt/
+)
+
+1. O leitor de ecrã não segue corretamente a ordem dos títulos e menus, tornando a navegação confusa.
+2. Textos sobre imagens (banners) têm contraste insuficiente, especialmente nas páginas principais.

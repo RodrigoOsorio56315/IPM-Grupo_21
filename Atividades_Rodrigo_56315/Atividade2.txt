@@ -1,0 +1,53 @@
+1. Uma imagem com texto dentro dela (invisível para leitores de ecrã)
+
+Exemplo: Página inicial da Zara Portugal (https://www.zara.com/pt
+).
+Problema: As promoções e campanhas são mostradas em imagens com texto incorporado (ex: “Nova Coleção Outono”), o que os leitores de ecrã não conseguem ler.
+
+2. Uma imagem sem texto alternativo (alt-text)
+
+Exemplo: Restaurante Solar dos Presuntos (https://solardospresuntos.pt/
+).
+Problema: Várias imagens do menu e da galeria não têm qualquer descrição alternativa.
+
+3. Link que diz apenas “clique aqui” ou semelhante
+
+Exemplo: Câmara Municipal de Lisboa (https://www.lisboa.pt/
+).
+Problema: Existem ligações com o texto “Saiba mais” ou “Clique aqui”, sem contexto, dificultando a navegação com leitores de ecrã.
+
+4. Texto pequeno ou com baixo contraste
+
+Exemplo: Fnac Portugal (https://www.fnac.pt/
+).
+Problema: As descrições dos produtos têm texto cinzento-claro sobre fundo branco, de leitura difícil.
+
+5. Uso de vermelho e verde para transmitir informação sem alternativa
+
+Exemplo: Site de resultados de exames médicos (MySNS) (https://mysns.min-saude.pt/
+).
+Problema: Resultados de estado (“positivo” ou “negativo”) usam apenas cores vermelha e verde, sem ícones ou texto adicional.
+
+6. Website que não funciona bem com zoom (parte do conteúdo desaparece)
+
+Exemplo: Booking.com (https://www.booking.com/
+).
+Problema: Ao aumentar o zoom acima de 150%, parte dos botões e filtros desaparece ou sobrepõe-se.
+
+7. Links ou botões muito pequenos
+
+Exemplo: Wikipedia (versão desktop) (https://pt.wikipedia.org/
+).
+Problema: As hiperligações de referências numéricas ([1], [2], etc.) são muito pequenas, difíceis de clicar com precisão.
+
+8. Vídeo sem legendas ou transcrição
+
+Exemplo: Site de trailers da Netflix Portugal (https://www.netflix.com/pt/
+).
+Problema: Muitos trailers automáticos não possuem legendas nem opção de transcrição.
+
+9. Formulário com limite de tempo estrito
+
+Exemplo: Sistema de inscrições em eventos Ticketline (https://ticketline.sapo.pt/
+).
+Problema: O carrinho expira após poucos minutos; utilizadores mais lentos podem perder a reserva antes de concluir o preenchimento.

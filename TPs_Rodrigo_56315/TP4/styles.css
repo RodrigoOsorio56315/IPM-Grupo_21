@@ -1,0 +1,151 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #064420;
+    color: white;
+}
+
+header, footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #064420;
+    color: white;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+header img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+header h1 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    gap: 10px;
+}
+
+footer {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 15px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    width: 100%;
+    flex-grow: 1;
+}
+
+.left, .middle, .right {
+    padding: 20px;
+    border-radius: 5px;
+    color: black;
+}
+
+.left, .right {
+    background-color: #a7c4a0;
+}
+
+.middle {
+    background-color: #5a8f71;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border: 4px double black;
+    padding-top: 20px;
+}
+
+#current-player {
+    margin-bottom: 20px;
+}
+
+.left form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.left input, .left button {
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+}
+
+.left button {
+    background-color: #064420;
+    color: white;
+    cursor: pointer;
+}
+
+#error-message {
+    color: darkred;
+    font-weight: bold;
+    font-size: 0.9em;
+    margin-top: 10px;
+    display: none;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th {
+    background-color: #064420;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #a7c4a0;
+}
+
+table tr:nth-child(odd) {
+    background-color: #7a9d6f;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
