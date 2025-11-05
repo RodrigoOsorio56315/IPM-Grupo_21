@@ -1,8 +1,5 @@
-/* ------------------------------------------------------------------------- 
-   IPM 2024-2025 DI-FCUL => Diogo Branco
-   CSS I                                      
-------------------------------------------------------------------------- */
-*{
+
+{
     font-family: Verdana;
     color: #000000;
     letter-spacing: 0.5px;
@@ -138,4 +135,5 @@ nav a:focus, nav a.selected {
 }
 ul{
     list-style-type: square;
+
 }
