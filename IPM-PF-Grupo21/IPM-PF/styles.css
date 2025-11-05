@@ -1,0 +1,635 @@
+/* ---------- Light theme (default) ---------- */
+:root {
+  /* Brand palette */
+  --color-primary: #0EA35B;           /* Leaf Green */
+  --color-primary-rgb: 14,163,91;
+  --color-primary-hover: #0B874B;
+
+  --color-secondary: #1FA3A3;         /* Teal */
+  --color-accent: #F2B705;            /* Sun */
+
+  /* Neutrals & surfaces */
+  --ink: #0F172A;                     /* Text primary */
+  --ink-muted: #475569;               /* Text secondary */
+  --paper: #FFFFFF;                   /* Cards / sheets */
+  --surface: #F6F8FA;                 /* App surface */
+  --muted: #F3F4F6;                   /* Subtle backgrounds */
+  --border: #E5E7EB;
+
+  /* Semantics */
+  --success: #16A34A;
+  --info:    #0EA5E9;
+  --warning: #F59E0B;
+  --error:   #E11D48;
+
+  /* Framework7 core bindings */
+  --f7-theme-color: var(--color-primary);
+  --f7-theme-color-rgb: var(--color-primary-rgb);
+
+  --f7-page-bg-color: var(--paper);
+  --f7-text-color: var(--ink);
+  --f7-border-color: var(--border);
+
+  --f7-block-strong-bg-color: var(--surface);
+  --f7-card-bg-color: var(--paper);
+  --f7-list-bg-color: var(--paper);
+
+  /* GREEN BARS (light) */
+  --f7-navbar-bg-color: var(--color-primary);
+  --f7-navbar-text-color: #ffffff;
+  --f7-navbar-link-color: #ffffff;
+  --f7-navbar-border-color: color-mix(in oklab, #000 12%, var(--color-primary));
+
+  --f7-toolbar-bg-color: var(--color-primary);
+  --f7-toolbar-text-color: #ffffff;
+  --f7-toolbar-link-color: #ffffff;
+  --f7-toolbar-border-color: color-mix(in oklab, #000 12%, var(--color-primary));
+
+  /* Links & ripple */
+  --f7-link-color: var(--color-primary);
+  --f7-tabbar-link-active-color: #ffffff; /* active label on green tabbar */
+  --f7-touch-ripple-color: rgba(var(--color-primary-rgb), 0.25);
+
+  /* Inputs */
+  --f7-input-bg-color: var(--paper);
+  --f7-input-text-color: var(--ink);
+  --f7-input-placeholder-color: #8a94a6;
+  --f7-input-border-color: var(--border);
+
+  /* Buttons (custom hooks) */
+  --button-primary-bg: var(--color-primary);
+  --button-primary-text: #ffffff;
+  --button-primary-hover-bg: var(--color-primary-hover);
+
+  /* Focus ring */
+  --focus-ring: 0 0 0 3px rgba(var(--color-primary-rgb), 0.3);
+
+  /* Base font sizing */
+  --f7-font-size: 16px;
+
+  /* Page content spacing relative to bars */
+  --page-top-gap: 12px;     /* extra space under NAVBAR */
+  --page-bottom-gap: 12px;  /* extra space above TOOLBAR */
+}
+
+/* ---------- Dark theme ---------- */
+.theme-dark {
+  /* Brand palette tuned for dark */
+  --color-primary: #4AD18E;           /* Lighter green for dark bg */
+  --color-primary-rgb: 74,209,142;
+  --color-primary-hover: #2FC477;
+
+  --color-secondary: #4ECACA;
+  --color-accent: #F6C549;
+
+  /* Neutrals & surfaces */
+  --ink: #E5E7EB;
+  --ink-muted: #9AA4B2;
+  --paper: #131B2F;
+  --surface: #0F1629;
+  --muted: #0D1526;
+  --border: #253049;
+
+  /* Semantics */
+  --success: #38D36E;
+  --info:    #38BDF8;
+  --warning: #F4B23E;
+  --error:   #FB7185;
+
+  /* Framework7 bindings */
+  --f7-theme-color: var(--color-primary);
+  --f7-theme-color-rgb: var(--color-primary-rgb);
+
+  --f7-page-bg-color: #0B1220;
+  --f7-text-color: var(--ink);
+  --f7-border-color: var(--border);
+
+  --f7-block-strong-bg-color: var(--surface);
+  --f7-card-bg-color: var(--paper);
+  --f7-list-bg-color: var(--paper);
+
+  /* GREEN BARS (dark) */
+  --f7-navbar-bg-color: var(--color-primary);
+  --f7-navbar-text-color: #0b0f14;     /* switch to #ffffff if you prefer */
+  --f7-navbar-link-color: #0b0f14;
+
+  --f7-toolbar-bg-color: var(--color-primary);
+  --f7-toolbar-text-color: #0b0f14;    /* or #ffffff */
+  --f7-toolbar-link-color: #0b0f14;
+
+  --f7-navbar-border-color: color-mix(in oklab, #000 20%, var(--color-primary));
+  --f7-toolbar-border-color: color-mix(in oklab, #000 20%, var(--color-primary));
+
+  /* Links & ripple */
+  --f7-link-color: var(--color-primary);
+  --f7-tabbar-link-active-color: #0b0f14; /* or #ffffff */
+  --f7-touch-ripple-color: rgba(var(--color-primary-rgb), 0.3);
+
+  /* Inputs */
+  --f7-input-bg-color: #111a2e;
+  --f7-input-text-color: var(--ink);
+  --f7-input-placeholder-color: #8a94a6;
+  --f7-input-border-color: var(--border);
+
+  /* Buttons (custom hooks) */
+  --button-primary-bg: var(--color-primary);
+  --button-primary-text: #0b0f14;     /* or #ffffff */
+  --button-primary-hover-bg: var(--color-primary-hover);
+
+  /* Focus ring */
+  --focus-ring: 0 0 0 3px rgba(var(--color-primary-rgb), 0.35);
+
+  --f7-list-item-title-text-color: var(--ink);
+
+  --f7-dialog-bg-color: var(--paper);
+  --f7-dialog-text-color: var(--ink);
+  --f7-dialog-title-text-color: var(--ink);
+  --f7-dialog-button-text-color: var(--color-primary);
+}
+
+/* ---------- Utilities / defaults ---------- */
+.text-muted   { color: var(--ink-muted); }
+.bg-surface   { background: var(--surface); }
+.bg-muted     { background: var(--muted); }
+.border-subtle{ border-color: var(--border); }
+
+.badge-success { background: var(--success); color: #fff; }
+.badge-info    { background: var(--info); color: #fff; }
+.badge-warning { background: var(--warning); color: #111; }
+.badge-error   { background: var(--error); color: #fff; }
+
+.card, .list, .block-strong {
+  background: var(--f7-card-bg-color);
+  border: 1px solid var(--f7-border-color);
+}
+
+.input, .item-input, input, select, textarea {
+  background: var(--f7-input-bg-color);
+  color: var(--f7-input-text-color);
+  border: 1px solid var(--f7-input-border-color);
+}
+.input::placeholder,
+input::placeholder,
+textarea::placeholder { color: var(--f7-input-placeholder-color); }
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}
+
+a.link { min-height: 44px; display: inline-flex; align-items: center; }
+.toolbar .link { padding: 12px 16px; }
+
+body, .view, .page, .page-content {
+  background: var(--f7-page-bg-color);
+  color: var(--f7-text-color);
+}
+
+.block, .list, .navbar, .toolbar { color: var(--f7-text-color); }
+
+.block-strong, .card {
+  background: var(--f7-card-bg-color);
+  border: 1px solid var(--f7-border-color);
+  border-radius: 16px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+}
+
+.page-content .block { max-width: 720px; margin-inline: auto; }
+
+/* Default F7 adds these; we’ll *augment* them below with safe max() */
+.page-content {
+  padding-top: calc(var(--f7-page-content-padding-top, 0px) + env(safe-area-inset-top));
+  padding-bottom: calc(var(--f7-page-content-padding-bottom, 0px) + env(safe-area-inset-bottom));
+}
+.navbar { padding-top: env(safe-area-inset-top); }
+.toolbar { padding-bottom: env(safe-area-inset-bottom); }
+
+/* ---------- BARS: make them GREEN & robust to markup differences ---------- */
+.navbar .navbar-bg { background: var(--f7-navbar-bg-color) !important; }
+.toolbar .toolbar-bg { background: var(--f7-toolbar-bg-color) !important; }
+
+/* Fallback if bg layers aren’t present */
+.navbar { background: var(--f7-navbar-bg-color) !important; }
+.toolbar { background: var(--f7-toolbar-bg-color) !important; }
+
+/* Borders/shadows */
+.navbar { box-shadow: 0 1px 0 var(--f7-navbar-border-color); }
+.toolbar { box-shadow: 0 1px 0 var(--f7-toolbar-border-color); }
+
+/* Text & links on bars */
+.navbar .title,
+.navbar .link { color: var(--f7-navbar-text-color) !important; }
+.toolbar .link { color: var(--f7-toolbar-text-color) !important; }
+
+/* Tabbar active state on green */
+.tabbar a.tab-link.tab-link-active,
+.toolbar .link.tab-link-active {
+  color: var(--f7-tabbar-link-active-color) !important;
+}
+
+/* Force solid bars on iOS (disable translucency) */
+.ios .navbar,
+.ios .toolbar,
+.ios .tabbar {
+  --f7-bars-translucent-opacity: 1;
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+}
+
+/* ---------- Buttons (pill style) ---------- */
+.button {
+  border-radius: 999px;
+  font-weight: 600;
+}
+.button.button-fill {
+  background: var(--button-primary-bg);
+  color: var(--button-primary-text);
+  border: 1px solid transparent;
+}
+.button.button-fill:hover { background: var(--button-primary-hover-bg); }
+.button.button-outline {
+  background: transparent;
+  color: var(--button-primary-bg);
+  border: 2px solid var(--button-primary-bg);
+}
+.theme-dark .button.button-outline {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+/* Page content spacing with your custom gaps */
+.page .page-content {
+  padding-top: calc(var(--f7-page-content-padding-top, 0px) + var(--page-top-gap));
+  padding-bottom: calc(var(--f7-page-content-padding-bottom, 0px) + var(--page-bottom-gap));
+}
+
+/* Size & touch area */
+.toolbar .link {
+  min-height: 44px;
+  padding: 12px 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Masked icon (tints to currentColor) */
+.tab-icon-mask {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  background-color: currentColor;
+  -webkit-mask: var(--icon) no-repeat center / contain;
+          mask: var(--icon) no-repeat center / contain;
+}
+
+/* Screen-reader-only text */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%);
+  white-space: nowrap; border: 0;
+}
+
+/* ===== Taller Navbar & Toolbar (same heights) ===== */
+:root {
+  --f7-navbar-height: 64px;            /* tweak both to match */
+  --f7-toolbar-height: 64px;
+  --f7-navbar-large-title-height: 64px; /* keep large-title bar consistent */
+  --f7-tabbar-labels-height: 64px;
+}
+
+/* Enforce min-heights so visuals match the variables */
+.navbar,
+.toolbar,
+.tabbar { min-height: var(--f7-toolbar-height); }
+.navbar { min-height: var(--f7-navbar-height); }
+
+/* Inner wrappers should match too for vertical centering */
+.navbar .navbar-inner { min-height: var(--f7-navbar-height); }
+.toolbar .toolbar-inner { min-height: var(--f7-toolbar-height); }
+
+/* Comfortable padding on both bars */
+.navbar .left > .link,
+.navbar .right > .link,
+.navbar .title,
+.navbar .link {
+  min-height: var(--f7-navbar-height);
+  display: inline-flex;
+  align-items: center;
+}
+.navbar .link { padding: 14px 18px; }
+.toolbar .link { padding: 14px 18px; } /* a bit more for taller bar */
+
+/* Icon scale to suit the taller bars */
+.tab-icon-mask { width: 28px; height: 28px; }
+
+/* ---- SAFE CONTENT PADDING (prevents title clipping) ---- */
+/* Guarantee top/bottom padding is at least the bar heights */
+.page .page-content {
+  /* take the greater of F7's computed padding OR our bar heights, then add your gap */
+  padding-top: calc(max(var(--f7-page-content-padding-top, 0px), var(--f7-navbar-height)) + var(--page-top-gap));
+  padding-bottom: calc(max(var(--f7-page-content-padding-bottom, 0px), var(--f7-toolbar-height)) + var(--page-bottom-gap));
+}
+
+/* iOS safe area with solid bars */
+.ios .navbar {
+  padding-top: calc(env(safe-area-inset-top));
+  --f7-bars-translucent-opacity: 1;
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+}
+.ios .toolbar {
+  padding-bottom: calc(env(safe-area-inset-bottom));
+  --f7-bars-translucent-opacity: 1;
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+}
+
+/* ===== Achievements (Badges) ===== */
+.badges-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.badge-card {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  border-radius: 14px;
+  background: var(--paper);                 /* follows light/dark */
+  color: var(--ink);                        /* text/icon color follows theme */
+  border: 1px solid var(--border);          /* themed border */
+  box-shadow: 0 1px 2px rgba(0,0,0,.06);    /* light theme shadow */
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.theme-dark .badge-card {
+  /* slightly stronger shadow on dark for contrast */
+  box-shadow: 0 1px 2px rgba(0,0,0,.35);
+  border-color: var(--border);
+}
+
+.badge-card img {
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
+  display: block;
+}
+
+.badge-card.locked {
+  background: var(--muted);                 /* themed muted bg */
+  color: var(--ink-muted);                  /* subtle text in both themes */
+}
+
+.badge-card.locked::after {
+  content: "?";
+  font-size: 42px;
+  line-height: 1;
+  font-weight: 800;
+  opacity: 0.35;                            /* works in both themes */
+}
+
+.badge-label {
+  position: absolute;
+  left: 8px;
+  right: 8px;
+  bottom: 8px;
+  font-size: 12px;
+  text-align: center;
+  color: var(--ink-muted);                  /* themed label */
+}
+
+/* Optional: make the popup body follow your tokens too */
+.achievement-dialog .dialog-inner {
+  background: var(--paper);
+  color: var(--ink);
+}
+
+/* ===== Route Planner ===== */
+.mini-map {
+  height: 140px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.route-map {
+  height: calc(100vh - 180px); /* fills most of screen under navbar */
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+
+/* Chips for modes (walk / metro / bus / bike) */
+.mode-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 6px 10px; border-radius: 999px;
+  font-size: 12px; font-weight: 600;
+  border: 1px solid var(--border);
+  background: var(--surface); color: var(--ink);
+}
+.theme-dark .chip { background: var(--paper); }
+
+.chip .dot {
+  width: 10px; height: 10px; border-radius: 50%;
+}
+
+/* Mode colors (used for dots & polylines) */
+.dot-walk  { background: #64748b; }  /* slate */
+.dot-metro { background: #1fa3a3; }  /* teal (your secondary) */
+.dot-bus   { background: #0ea5e9; }  /* info blue */
+.dot-bike  { background: #0ea35b; }  /* primary green */
+
+/* Option card layout */
+.route-option {
+  display: grid; gap: 10px;
+}
+.route-summary {
+  display: flex; justify-content: space-between; align-items: center;
+  font-weight: 600;
+}
+.route-meta {
+  font-size: 13px; color: var(--ink-muted);
+}
+
+/* Route map height (tweak here) */
+:root { --route-map-height: 56vh; }  /* was ~ full screen; now a bit smaller */
+.route-map {
+  height: var(--route-map-height);
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+
+/* Optional: slightly smaller on short screens */
+@media (max-height: 700px) {
+  :root { --route-map-height: 48vh; }
+}
+
+/* ===== Feature 3: Challenges (theme-safe) ===== */
+.page[data-name="challenges"],
+.page[data-name="challenges"] .card,
+.page[data-name="challenges"] .list,
+.page[data-name="challenges"] .block {
+  color: var(--ink);
+  background: transparent; /* inherit page surface */
+}
+
+.page[data-name="challenges"] .text-muted {
+  color: var(--ink-muted);
+}
+
+.avatar {
+  width: 28px; height: 28px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: var(--muted);
+  object-fit: cover;
+}
+
+.progress {
+  width: 100%;
+  height: 10px;
+  border-radius: 999px;
+  background: var(--muted);
+  border: 1px solid var(--border);
+  margin: 10px 0 6px;
+  overflow: hidden;
+}
+.progress .progress-bar {
+  height: 100%;
+  background: var(--color-primary);
+}
+
+.leaderboard { display: grid; gap: 8px; }
+.lb-row {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 10px; border: 1px solid var(--border); border-radius: 12px;
+  background: var(--paper); color: var(--ink);
+}
+.lb-left { display: flex; align-items: center; gap: 10px; }
+.lb-rank {
+  width: 28px; height: 28px; display: grid; place-items: center;
+  border-radius: 50%; background: var(--surface); border: 1px solid var(--border);
+  color: var(--ink); font-weight: 700;
+}
+.lb-name { font-weight: 600; color: var(--ink); }
+.lb-score { font-weight: 700; color: var(--ink); }
+
+/* Chips (people picker) */
+.chip.selectable { cursor: pointer; user-select: none; gap: 8px; padding: 6px 12px; color: var(--ink); background: var(--surface); border: 1px solid var(--border); border-radius: 999px; }
+.chip.selectable input { display: none; }
+.chip.selectable input:checked + span { font-weight: 700; }
+
+/* Popup background should use tokens */
+.popup {
+  background: var(--paper);
+  color: var(--ink);
+}
+
+/* ==== Goal unit radio chips (theme-safe) ==== */
+.chip.selectable {
+  color: var(--ink);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 9999px;
+  padding: 6px 12px;
+  cursor: pointer;
+  user-select: none;
+  transition: background .15s ease, color .15s ease, border-color .15s ease, outline-color .15s ease;
+}
+.chip.selectable input { display: none; }
+
+/* Highlight when selected (no JS needed) */
+.chip.selectable:has(input:checked) {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: var(--surface);
+  outline: 2px solid var(--color-primary);
+  outline-offset: 1px;
+}
+.chip.selectable:has(input:checked) span {
+  color: var(--surface);
+  font-weight: 700;
+}
+
+/* Optional: hover/focus affordance */
+.chip.selectable:hover { border-color: var(--color-primary); }
+.chip.selectable:focus-within { outline: 2px solid var(--color-primary); outline-offset: 1px; }
+
+/* --- iOS navbar layering & layout hardening --- */
+.navbar .navbar-inner {
+  display: flex;
+  align-items: center;
+  position: relative;           /* stack above bg */
+  z-index: 1;
+}
+.navbar .navbar-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;                   /* keep bg behind content */
+}
+.navbar .left,
+.navbar .right {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+}
+.navbar .title {
+  flex: 1 1 auto;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  pointer-events: none;         /* title never steals taps */
+}
+.navbar .right .link {
+  position: relative;           /* ensure above neighbors */
+  z-index: 2;
+}
+
+/* --- iOS safe-area padding for notch devices --- */
+:root{
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+}
+.navbar {
+  padding-top: var(--safe-top);
+}
+.toolbar {
+  padding-bottom: var(--safe-bottom);
+}
+/* ensure content never hides under bottom toolbar on iOS refresh */
+.view .page-content {
+  padding-bottom: calc(var(--safe-bottom) + 0px); /* add more if your toolbar isn't "through" */
+}
+
+/* --- radio chips: visible selected state with only tokens (works on iOS) --- */
+.chip.selectable {
+  color: var(--ink);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 9999px;
+  padding: 6px 12px;
+  cursor: pointer; user-select: none;
+  transition: background .15s, color .15s, border-color .15s, outline-color .15s;
+}
+.chip.selectable input { display: none; }
+
+/* Use :has, which Mobile Safari supports in current versions */
+.chip.selectable:has(input:checked) {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: var(--surface);
+  outline: 2px solid var(--color-primary);
+  outline-offset: 1px;
+}
+.chip.selectable:has(input:checked) span {
+  color: var(--surface);
+  font-weight: 700;
+}
+
+
