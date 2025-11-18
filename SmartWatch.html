@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smartwatch With Real Time</title>
+
+<style>
+    body {
+        background: #0f0f0f;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        color: white;
+    }
+
+    .watch-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        filter: drop-shadow(0 0 25px rgba(0,0,0,0.6));
+    }
+
+    .strap {
+        width: 150px;
+        height: 200px;
+        background: linear-gradient(180deg, #292929, #1f1f1f 40%, #141414);
+        border-radius: 22px;
+        position: relative;
+        box-shadow: inset 0 0 12px rgba(0,0,0,0.6);
+        overflow: hidden;
+    }
+
+    .strap.top {
+        margin-bottom: 6px;
+        border-radius: 0 0 24px 24px;
+    }
+
+    .strap.bottom {
+        margin-top: 6px;
+        border-radius: 24px 24px 0 0;
+    }
+
+    .strap.bottom::before {
+        content: "";
+        position: absolute;
+        top: 15px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 14px;
+        height: 130px;
+        background: repeating-linear-gradient(
+            to bottom,
+            transparent 0px,
+            transparent 20px,
+            rgba(0, 0, 0, 0.85) 20px,
+            rgba(0, 0, 0, 0.85) 34px
+        );
+        border-radius: 6px;
+        filter: blur(0.5px);
+    }
+
+    .strap::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: repeating-linear-gradient(
+            to bottom,
+            rgba(255,255,255,0.04) 0px,
+            rgba(255,255,255,0.04) 2px,
+            transparent 2px,
+            transparent 8px
+        );
+        pointer-events: none;
+    }
+
+    .watch {
+        width: 260px;
+        height: 260px;
+        background: #000;
+        border: 8px solid #373737;
+        border-radius: 30px;
+        box-shadow:
+            0 0 30px rgba(0,0,0,0.7),
+            inset 0 0 18px rgba(255,255,255,0.05),
+            inset 0 0 50px rgba(0,0,0,0.5);
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .time {
+        font-size: 52px;
+        font-weight: bold;
+        letter-spacing: 1.5px;
+        position: absolute;
+        top: 42%;
+        transform: translateY(-50%);
+    }
+
+    .notification {
+        position: absolute;
+        bottom: 10px;
+        width: 220px;
+        padding: 12px;
+        background: rgba(255,255,255,0.12);
+        border-radius: 14px;
+        backdrop-filter: blur(5px);
+        border: 1px solid rgba(255,255,255,0.2);
+        text-align: center;
+        display: none;
+        animation: slideUp 0.5s ease-out forwards;
+    }
+
+    /* fade-out when accepted */
+    .fadeOut {
+        animation: fadeOut 0.5s forwards;
+    }
+
+    @keyframes fadeOut {
+        from { opacity: 1; transform: translateY(0); }
+        to   { opacity: 0; transform: translateY(20px); }
+    }
+
+    @keyframes slideUp {
+        from { transform: translateY(25px); opacity: 0; }
+        to   { transform: translateY(0); opacity: 1; }
+    }
+
+    .notification button {
+        margin-top: 8px;
+        padding: 6px 12px;
+        background: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="watch-wrapper">
+
+    <div class="strap top"></div>
+
+    <div class="watch">
+        <div class="time" id="clock">--:--</div>
+
+        <div class="notification" id="notify">
+            🏆 <strong>Trophy Unlocked!</strong><br>
+            Night Walker — 10km at night
+            <br>
+            <button onclick="saveTrophy()">Save Trophy</button>
+        </div>
+    </div>
+
+    <div class="strap bottom"></div>
+
+</div>
+
+<script>
+    // Real time clock
+    function updateClock() {
+        const now = new Date();
+        let h = now.getHours().toString().padStart(2, "0");
+        let m = now.getMinutes().toString().padStart(2, "0");
+        document.getElementById("clock").textContent = `${h}:${m}`;
+    }
+    setInterval(updateClock, 1000);
+    updateClock();
+
+    // Show notification
+    setTimeout(() => {
+        document.getElementById("notify").style.display = "block";
+    }, 3000);
+
+    // Hide notification after saving
+    function saveTrophy() {
+        const notif = document.getElementById("notify");
+
+        notif.classList.add("fadeOut");
+
+        notif.addEventListener("animationend", () => {
+            notif.remove();
+        });
+
+        alert("Trophy saved!");
+    }
+</script>
+
+</body>
+</html>
