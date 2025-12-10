@@ -1,0 +1,21 @@
+.target {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #808080;
+}
+
+.goal-0 {
+    width: 40px;
+    height: 40px;
+    background-color: #ff0000;
+}
+.goal-1{
+    width: 28px;
+    height: 28px;
+    background-color: #b84b4b;
+}
+.goal-2{
+    width: 20px;
+    height: 20px;
+    background-color: #797979
+}
