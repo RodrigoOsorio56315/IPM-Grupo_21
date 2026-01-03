@@ -1,0 +1,14 @@
+@media screen and (min-width: 1058px) {
+	.wrap {
+		display: grid;
+		grid-template-columns: auto 1fr;
+	}
+	
+	.wrap > h1, .wrap > .team, .wrap > .instructions {
+		grid-column: 1/3;
+	}
+	
+	.wrap > .sep {
+		display: none;
+	}
+}

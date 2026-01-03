@@ -1,0 +1,31 @@
+a)
+
+A interface não disponibiliza uma opção clara ou acessível para o utilizador sair da secção de mensagens, limitando o controlo sobre a navegação.
+
+Heurística violada:
+3. Controlo e liberdade do utilizador
+
+b)
+Ao selecionar uma opção na secção "Procurar", a funcionalidade da seta de retroceder deixa de operar corretamente, causando um ciclo entre páginas anteriores e impedindo o utilizador de regressar ao ponto inicial da navegação.
+
+Heurística violada:
+3. Controlo e liberdade do utilizador
+
+c)
+As informações introduzidas pelo utilizador durante a criação do perfil não são guardadas ou apresentadas posteriormente na página "Perfil", comprometendo a consistência dos dados e a confiança na interface.
+
+Heurística violada:
+
+1.Visibilidade do estado do sistema
+
+d)
+Ao clicar no mapa em branco, o botão "Benefícios e Penalizações" altera o seu estado visual para ativo, apesar de a funcionalidade não estar disponível, induzindo o utilizador em erro.
+
+Heurística violada:
+5. Prevenção de erros
+
+e)
+O botão identificado com um ponto de exclamação sugere fornecer informações adicionais, porém não executa qualquer ação, criando uma expectativa falsa no utilizador.
+
+Heurística violada:
+2. Correspondência entre o sistema e o mundo real

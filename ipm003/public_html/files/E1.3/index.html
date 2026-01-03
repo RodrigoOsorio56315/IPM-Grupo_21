@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Green Way</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="description" content="GreenWay is the Way" />
+
+  <!-- Framework7 CSS (CDN) -->
+  <link rel="stylesheet" href="https://unpkg.com/framework7/framework7-bundle.min.css" />
+  <!-- Your styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- App root element -->
+  <div id="app">
+    <!-- Statusbar overlay (safe on iOS notch) -->
+    <div class="statusbar"></div>
+
+    <!-- Main view -->
+    <div class="view view-main ios-edges" aria-label="Main content" role="main">
+      <!-- Initial page -->
+      <div class="page" data-name="home">
+        <div class="navbar" role="navigation" aria-label="Top navigation">
+          <div class="navbar-bg"></div>
+          <div class="navbar-inner">
+            <div class="left">
+              <a href="/profile/" class="link tab-link" aria-label="Profile">
+                <span class="icon-only tab-icon-mask" style="--icon:url('/assets/people.png');"></span>
+                <span class="visually-hidden">Profile</span>
+              </a>
+            </div>
+            <div class="title">Home</div>
+            <div class="right">
+              <a href="/settings/" class="link tab-link" aria-label="Settings">
+                <span class="icon-only tab-icon-mask" style="--icon:url('/assets/setting.png');"></span>
+                <span class="visually-hidden">Settings</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="page-content">
+          <div class="block">
+            <h1 class="no-margin">GreenWay</h1>
+            <p>Use the bottom toolbar to navigate.</p>
+          </div>
+        </div>
+      </div> <!-- /page -->
+
+      <!-- PERSISTENT TOOLBAR (through) -->
+      <div class="toolbar toolbar-bottom" role="navigation" aria-label="Bottom tabs">
+        <div class="toolbar-bg"></div>
+        <div class="toolbar-inner">
+          <a href="/badges/" class="link tab-link" aria-label="Feature 1">
+            <span class="icon-only tab-icon-mask" style="--icon:url('/assets/crown.png');"></span>
+            <span class="visually-hidden">Feature 1</span>
+          </a>
+          <a href="/plan/" class="link tab-link" aria-label="Feature 2">
+            <span class="icon-only tab-icon-mask" style="--icon:url('/assets/roadmap.png');"></span>
+            <span class="visually-hidden">Feature 2</span>
+          </a>
+          <a href="/f3/" class="link tab-link" aria-label="Feature 3">
+            <span class="icon-only tab-icon-mask" style="--icon:url('/assets/ranking.png');"></span>
+            <span class="visually-hidden">Feature 3</span>
+          </a>
+        </div>
+      </div>
+      <!-- /persistent toolbar -->
+    </div> <!-- /view -->
+  </div> <!-- /app -->
+
+  <!-- Framework7 JS (CDN) -->
+  <script src="https://unpkg.com/framework7/framework7-bundle.min.js"></script>
+  <!-- Your app logic -->
+  <script src="app.js"></script>
+</body>
+</html>

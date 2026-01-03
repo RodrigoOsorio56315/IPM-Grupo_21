@@ -1,0 +1,364 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Portefólio do grupo 003</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,700|Source+Sans+Pro:300,400,700">
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+
+    <div class="wrap">
+        <h1>
+            <div class="title">Portefólio do grupo XXX</div>
+            <div class="subtitle">Interfaces Pessoa-Máquina</div>
+            <div class="subtitle">2023/2024</div>
+        </h1>
+
+        <div class="team">
+            <h2><span>A nossa equipa</span></h2>
+            <div class="people">
+                <div class="person">
+                    <div class="photo-wrapper">
+                        <img src="imgs/photo1.webp">
+                    </div>
+                    <div class="who">
+                        <span class="name">Martim Neto</span>
+                        <span class="number">Aluno #56279</span>
+                        <span class="email"><a href="mailto:fc56279@alunos.fc.ul.pt">fc56279@alunos.fc.ul.pt</a></span>
+                    </div>
+                </div>
+                <div class="person">
+                    <div class="photo-wrapper">
+                        <img src="imgs/photo2.webp">
+                    </div>
+                    <div class="who">
+                        <span class="name">Rodrigo Osório</span>
+                        <span class="number">Aluno #56315</span>
+                        <span class="email"><a href="mailto:fc56315@alunos.fc.ul.pt">fc56315@alunos.fc.ul.pt</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="master-panel">
+            <h2>Organização do semestre</h2>
+
+            <h3>1. Projecto A</h3>
+            <ul>
+                <li>
+                    <span class="delivery">Entrega 1.1</span>
+                    <button data-panel="panel-E1.1">Protótipo de Baixa Fidelidade (PBF)</button>
+                </li>
+                <li>
+                    <span class="delivery">Entrega 1.2</span>
+                    <button data-panel="panel-E1.2">Wizard of Oz</button>
+                </li>
+                <li>
+                    <span class="delivery">Entrega 1.3</span>
+                    <button data-panel="panel-E1.3">Protótipo Funcional 1 (PF1)</button>
+                </li>
+                <li>
+                    <span class="delivery">Entrega 1.4</span>
+                    <button data-panel="panel-E1.4">Avaliações heurísticas</button>
+                </li>
+                <li>
+                    <span class="delivery">Entrega 1.5</span>
+                    <button data-panel="panel-E1.5">Protótipo Funcional 2 (PF2)</button>
+                </li>
+                <li>
+                    <span class="delivery">Entrega 1.6</span>
+                    <button data-panel="panel-E1.6">Apresentação do PF2</button>
+                </li>
+                <li>
+                    <span class="delivery">Preencher semanalmente</span>
+                    <button data-panel="panel-effort">Tabela de Esforço</button>
+                </li>
+            </ul>
+
+            <h3>2. Projecto B</h3>
+            <ul>
+                <li>
+                    <span class="delivery">Entrega 2.1</span>
+                    <button data-panel="panel-E2.1">Projeto B</button>
+                </li>
+            </ul>
+        </div>
+
+        <div class="sep"></div>
+
+        <div class="panels">
+            <div class="panel" id="panel-instructions">
+                <p>
+                    Clique numa das entregas da lista anterior para ver o painel
+                    correspondente, que inclui uma descrição da entrega, o
+                    conteúdo da mesma, e o seu <em>deadline</em>.
+                </p>
+            </div>
+
+            <div class="panel" id="panel-E1.1">
+                <h2>Protótipo de Baixa Fidelidade (PBF)</h2>
+                <table>
+                    <tr>
+                        <td class="heading">Descrição</th>
+                        <td>
+                            Fotografias ou <em>scans</em> dos vários ecrãs prototipados
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="heading">Deadline</th>
+                        <td>
+                            Até ao início da TP5. Os alunos deverão trazer para
+                            a aula os protótipos para poderem ser usados no
+                            exercício de Wizard of Oz que será feito na aula.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="heading">Conteúdo</th>
+                        <td>
+                            Cada aluno poderá entregar várias imagens, cada uma
+                            correspondendo a um ecrã do protótipo. Para tal,
+                            cada aluno deverá criar um directório
+                            <code>E1.1/<em>&lt;#aluno&gt;</em></code> e fazer
+                            <em>upload</em> das imagens para lá.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="heading">Entrega</td>
+                        <td class="delivery-files">
+                            <a href="files/E1.1/">PBF</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="panel" id="panel-E1.2">
+                <h2>Wizard of Oz</h2>
+                <table>
+                    <tr>
+                        <td class="heading">Descrição</th>
+                        <td>
+                            Relatório descrevendo os dados recolhidos durante a
+                            actividade de Wizard of Oz feita durante a TP.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="heading">Deadline</th>
+                        <td>
+                            Até ao final do dia da TP5
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="heading">Conteúdo</th>
+                        <td>
+                            Cada grupo deverá entregar um relatório em formato
+                            <code>.pdf</code> que descreva os resultados obtidos
+                            com a avaliação de Wizard of Oz, incluindo pelo menos:
+                            <ul>
+                                <li>erros cometidos pelo participane</li>
+                                <li>comentários dos participantes</li>
+                                <li>observações qualitativas</li>
+                                <li>conclusões e decisões</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="heading">Entrega</td>
+                        <td class="delivery-files">
+                            <p>Todos os grupos referiram que alguns ícones não eram intuitivos e não faziam muito sentido. Foi também apontada a necessidade de destacar visualmente o ícone correspondente à página atual, de forma a facilitar a navegação.</p>
+                            <p> Adicionalmente, o relógio foi considerado pouco útil, uma vez que oferecia pouca funcionalidade. Por fim, vários participantes mencionaram que a presença da competição atual na página principal não fazia sentido dentro do fluxo da aplicação.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="panel" id="panel-E1.3">
+                <h2>Protótipo Funcional 1 (PF1)</h2>
+                <table>
+                    <tr>
+                        <td class="heading">Descrição</th>
+                        <td>
+                            Primeira versão do protótipo funcional
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="heading">Deadline</th>
+                        <td>
+                            Até ao início da TP7. Os alunos deverão ter o seu
+                            PF1 pronto na aula para poder ser alvo de avaliação
+                            heurística, que será feita na aula.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="heading">Conteúdo</th>
+                        <td>
+                            O grupo deverá entregar um protótipo
+                            <strong>funcional</strong> capaz de executar as tarefas
+                            definidas no enunciado. A entrega consiste em todos os ficheiros
+                            necessários para que o protótipo (baseado em tecnologias web)
+                            funcione. Isto inclui ficheiros <code>.html</code>,
+                            <code>.css</code>, <code>.js</code>, assim como
+                            imagens e outros recursos necessários ao
+                            funcionamento correcto do protótipo.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="heading">Entrega</td>
+                        <td class="delivery-files">
+                            <a href="files/E1.3/">Protótipo funcional 1</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="panel" id="panel-E1.4">
+                <h2>Avaliações heurísticas</h2>
+                <table>
+                    <tr>
+                        <td class="heading">Descrição</th>
+                        <td>
+                            Avaliações heurísticas feitas na aula TP7
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="heading">Deadline</th>
+                        <td>
+                            Até ao final do dia da TP7
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="heading">Conteúdo</th>
+                        <td>
+                            Cada aluno deve entregar as várias avaliações
+                            heurísticas que fez. Adicionalmente, cada grupo deve
+                            entregar as várias avaliações heurísticas que
+                            recebeu dos seus colegas. Para isso, sugere-se que
+                            cada aluno compile as várias avaliações que fez num
+                            único <code>.pdf</code>, e que o grupo compile as
+                            avaliações que recebeu num outro <code>.pdf</code> à
+                            parte.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="heading">Entrega</td>
+                        <td class="delivery-files">
+                            <a href="files/E1.4/">Avaliações feitas e recebidas pelo grupo</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="panel" id="panel-E1.5">
+                <h2>Protótipo Funcional 2 (PF2)</h2>
+                <table>
+                    <tr>
+                        <td class="heading">Descrição</th>
+                        <td>
+                            Segunda versão do protótipo funcional. Avaliação com utilizadores realizada na aula.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="heading">Deadline</th>
+                        <td>
+                            Até ao início da aula da TP08 (podem alterar após a avaliação com utilizadores, até à TP09)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="heading">Conteúdo</th>
+                        <td>
+                            O grupo deverá entregar o protótipo funcional
+                            melhorado. A entrega consiste em todos os ficheiros
+                            necessários para que o protótipo (baseado em
+                            tecnologias web) funcione. Isto inclui ficheiros
+                            <code>.html</code>, <code>.css</code>,
+                            <code>.js</code>, assim como imagens e outros
+                            recursos necessários ao funcionamento correcto do
+                            protótipo. 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="heading">Entrega</td>
+                        <td> Temos apenas od ficheiros da versao final por isso E1.3 = a E1.5</td>
+                        <td class="delivery-files">
+                            <a href="files/E1.3/">Protótipo funcional 2</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="panel" id="panel-E1.6">
+                <h2>Apresentação do PF2</h2>
+                <table>
+                    <tr>
+                        <td class="heading">Descrição</th>
+                        <td>
+                            Apresentação do projecto A
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="heading">Deadline</th>
+                        <td>
+                            Até uma hora antes da TP09. O ficheiro será
+                            descarregado pelo docente e a apresentação será
+                            feita através do portátil do docente.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="heading">Conteúdo</th>
+                        <td>
+                            O grupo deverá entregar uma apresentação em formato
+                            <code>.pdf</code> que demonstre o seu protótipo, incluindo:
+                            <ul>
+                                <li>Elementos interactivos mais importantes do protótipo</li>
+                                <li>Evolução ao longo do tempo (PBF &rightarrow; PF1 &rightarrow; PF2)</li>
+                                <li>Resultados gerais das avaliaçãoes (Wizard of Oz &amp; Avaliação heurística)</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="heading">Entrega</td>
+                        <td class="delivery-files">
+                            <a href="files/E1.6/IPM Final Present.pptx">Apresentação do projecto A</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="panel" id="panel-effort">
+                <h2>Tabela de Esforço</h2>
+                <table>
+                <tr><td rowspan="2">Número</td><td colspan="3">Esforço (%)</td></tr>
+                <tr><td>TP7</td><td>TP9</td><td>TP10</td></tr>
+                <tr><td>56279</td><td>50</td><td>50</td><td>50</td></tr>
+                <tr><td>56315</td><td>50</td><td>50</td><td>50</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="panel" id="panel-E2.1">
+            <h2>Relatório Projeto B</h2>
+            <table>
+                <tr>
+                    <td class="heading">Entrega</td>
+                    <td class="delivery-files">
+                        <a href="files/E2.1/ProjetoB_Relatório_Grupo003.docx">relatorio projeto B</a>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+
+        
+
+        <div class="instructions">
+            As instruções para o uso deste portefólio encontram-se
+            <a href="http://areasgrupo.alunos.di.fc.ul.pt/~ipm000/instructions.html">numa página à parte</a>.
+        </div>
+
+    </div>
+</body>
+
+</html>

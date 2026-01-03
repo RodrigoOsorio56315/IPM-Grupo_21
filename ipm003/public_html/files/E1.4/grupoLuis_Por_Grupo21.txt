@@ -1,0 +1,9 @@
+O sistema não permite reiniciar um único desafio de forma individual, obrigando o utilizador a reiniciar todos os desafios em simultâneo, reduzindo a flexibilidade e o controlo sobre as ações.
+
+Heurística violada:
+7. Flexibilidade e eficiência de uso
+
+O sistema aceita dados inválidos ou aleatórios nos campos do perfil, sem qualquer validação ou restrição, comprometendo a integridade das informações introduzidas.
+
+Heurística violada:
+5. Prevenção de erros
